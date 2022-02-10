@@ -9,16 +9,14 @@
           i.text-white.fas.fa-info        
       h1 Introducción
 
-    .tabla-c
-      table.mt-3.mb-5.bloque-texto-g__img(
-          :style="{'background-image': `url(${require('@/assets/curso/BackgroundBannerIntro.png')})`}")      
-        tr
-          th
-            img(width="50" height="50" src='@/assets/curso/figRio.svg')
-          td 
-            p.mr-5.text-large Las empresas pecuarias son una necesidad en todos los países y por eso se trabajará en este contenido la normativa y procedimiento básico para quienes tengan o quieran tener una:
-          td
-            img(src='@/assets/curso/Tractor.svg')
+    .shadow.p-3.mb-5.bg-body.rounded.fondoBanner-1
+      .row.align-items-center
+        .col-1
+          img(src='@/assets/curso/figRio.svg')
+        .col-6
+          p.me-5.text-large Las empresas pecuarias son una necesidad en todos los países y por eso se trabajará en este contenido la normativa y procedimiento básico para quienes tengan o quieran tener una:
+        .col-5     
+          img(src='@/assets/curso/Tractor.svg')
 
     //p.mb-5 Las empresas pecuarias son una necesidad en todos los países y por eso se trabajará en este contenido la normativa y procedimiento básico para quienes tengan o quieran tener una:
     figure.mt-5.mb-5
