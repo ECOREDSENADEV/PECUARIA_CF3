@@ -25,12 +25,12 @@
       .col-7
         p.mb-4 La relevancia de las empresas es tan elevadas que la normatividad colombiana cuenta con diversas normas que la definen y regulan. El ejemplo más claro lo contiene el código de comercio de 1971, considerado el compendio de normas comerciales más importante en Colombia; allí se define de la siguiente forma:
         .cajon.Color-Bkg-Cajon.p-4.mb-4.Neg-Izq.position-relative
-          p.color-acento-contenido ARTÍCULO 25. EMPRESA - CONCEPTO. Se entenderá por empresa toda actividad económica organizada para la producción, transformación, circulación, administración o custodia de bienes, o para la prestación de servicios. Dicha actividad se realizará a través de uno o más establecimientos de comercio (Código de Comercio, 1971, Artículo 25).
+          p.color-acento-contenido <span style='color:#5F9025;'>ARTÍCULO 25. EMPRESA - CONCEPTO.</span> Se entenderá por empresa toda actividad económica organizada para la producción, transformación, circulación, administración o custodia de bienes, o para la prestación de servicios. Dicha actividad se realizará a través de uno o más establecimientos de comercio (Código de Comercio, 1971, Artículo 25).
           img.hijoHoja(src='@/assets/curso/hoja.png')
       .col-5
         img(src='@/assets/curso/Recolectores.png')
-    
-    h2.titulo-segundo 1.1 Clasificación
+    .titulo-segundo.color-acento-contenido
+      h2 1.1 Clasificación   
     .shadow.p-3.mb-5.bg-body.rounded.fondoBanner-1
       .row.align-items-center
         .col-1
@@ -141,77 +141,125 @@
     .row.mb-5.mt-5
       .col-7
         p.text-small Adicionalmente se tienen las empresas por orden legal tal como se presenta a continuación: 
-
         h3 
-          span.colorText-verde Según su constitución jurídica
+          span.colorText-verde <u>Según su constitución jurídica</u>
         p.text-small Las organizaciones que cumplen con la definición de empresa pueden ser constituidas de manera unipersonal o a través de la creación de una persona jurídica en donde se unen varios inversores organizados en sociedad:
+        //linea de tiempo
+        .row.mb-5
+          .col-md-12.mb-5.mb-md-0
+            //- LineaTiempoD debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            LineaTiempoD.color-acento-contenido
+              .row(numero="1" titulo="Societarias")
+                .col-md-12.mb-4.mb-md-0
+                  p.text-small <span style="color:green;">Se constituyen como un organismo independiente </span>a los socios que la crearon por lo que cuentan con un número de identificación propio y único. Gracias a su personería jurídicas, la responsabilidad frente a terceros recae sobre sí misma y sobre su representante legal. En Colombia la legislación y practica comercial contemplan varios tipos de empresas que cumplen con esta definición. La forma más rápida y sencilla de identificarlas es observando la terminación de su nombre o razón social, ver tabla 1:
+                  .titulo-sexto.color-acento-contenido
+                    h5 Tabla 1.
+                    span Tipos societarios        
+                  .tabla-a.color-primario.mb-5.ms-4.me-4 
+                    table
+                      caption Nota. Sena (2021).
+                      thead
+                        tr.bg-tabla-primario
+                          th.text-white
+                            h3 Tipo societario
+                          th.text-white 
+                            h3 Terminación
+                      tbody
+                        tr
+                          td 
+                            h4.ms-2 Sociedad en comandita simple 
+                          td 
+                            h4.ms-2 S en C
+                        tr
+                          td 
+                            h4.ms-2 Sociedad en Comandita por Acciones
+                          td 
+                            h4.ms-2 S.C.A.
+                        tr
+                          td 
+                            h4.ms-2 Sociedad de responsabilidad limitada.
+                          td 
+                            h4.ms-2 Ltda.         
+                        tr
+                          td 
+                            h4.ms-2 Sociedad Anónima
+                          td 
+                            h4.ms-2 S.A.
+                        tr
+                          td 
+                            h4.ms-2 Sociedad por acciones simplificada.
+                          td 
+                            h4.ms-2 S.A.S.                 
 
-        .titulo-principal.color-secundario
-          .titulo-principal__numero              
-            span 1        
-          .container-fluid
-            .row.bg-color-gris
-              .col-12
-                p Societarias
+              .row(numero="2" titulo="Autónomas")
+                .col-md-6
+                  figure
+                    img(src='@/assets/template/GrupoOficina.svg', alt='Sociedades autónomas')
+                .col-md-6.mb-4.mb-md-0
+                  p.text-large.align.items.center <span style="color:green;">Se constituyen por una sola persona natural</span> sin crear  otra entidad independiente. Asumen todas las responsabilidades frente a terceros. Como no cuentan con personería jurídica, no requieren de un número de identificación independiente.
 
-        .titulo-principal.color-secundario
-          .titulo-principal__numero              
-            span 2        
-          .container-fluid
-            .row.bg-color-gris.align-items-center
-              .col-12
-                p Autónomas
-
-        .titulo-principal.color-acento-contenido.align-items-start
-          .titulo-principal__numero        
-            span 1
-          .container-fluid        
-            .row.bg-color-gris 
-              .col-12
-                h3 Societarias
-                p <span style="color:green;">Se constituyen como un organismo independiente </span>a los socios que la crearon por lo que cuentan con un número de identificación propio y único. Gracias a su personería jurídicas, la responsabilidad frente a terceros recae sobre sí misma y sobre su representante legal. En Colombia la legislación y practica comercial contemplan varios tipos de empresas que cumplen con esta definición. La forma más rápida y sencilla de identificarlas es observando la terminación de su nombre o razón social, ver tabla 1:
-              .titulo-sexto.color-acento-contenido
-                h5 Tabla 1 
-                span Tipos societarios
-              .tabla-a.color-primario.mb-5 
-                table.table-border
-                  caption Nota. Sena (2021).
-                  thead
-                    tr.bg-tabla-primario
-                      th.text-white
-                        h3 Tipo societario
-                      th.text-white 
-                        h3 Terminación
-                  tbody
-                    tr
-                      td 
-                        h4.ms-2 Sociedad en comandita simple 
-                      td 
-                        h4.ms-2 S en C
-                    tr
-                      td 
-                        h4.ms-2 Sociedad en Comandita por Acciones
-                      td 
-                        h4.ms-2 S.C.A.
-                    tr
-                      td 
-                        h4.ms-2 Sociedad de responsabilidad limitada.
-                      td 
-                        h4.ms-2 Ltda.         
-                    tr
-                      td 
-                        h4.ms-2 Sociedad Anónima
-                      td 
-                        h4.ms-2 S.A.
-                    tr
-                      td 
-                        h4.ms-2 Sociedad por acciones simplificada.
-                      td 
-                        h4.ms-2 S.A.S.
       .col-5
         img(src='@/assets/curso/saludoManos.png')
+      h3
+        span.colorText-verde <u>Según tamaño</u>
+        .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5.mt-5
+          .bloque-texto-g__img(
+            :style="{'background-image': `url(${require('@/assets/curso/Lectora.jpg')})`}"
+          )
+          .bloque-texto-g__texto.p-4
+            p.mb-0.text-small <span style='color:#5F9025;'>Para clasificar las empresas según su tamaño existen diversos criterios o escalas de medición.</span> Algunos se apoyan en la cantidad de activos, otros en el tamaño de su patrimonio o bien en el número de empleos que genera. La legislación colombiana ha sancionado diversos decretos y leyes que presentan unos criterios determinados. Como ejemplo de lo anterior, la ley 590 de 2000 lista las categorías y los rangos para clasificar las empresas en función de criterios como el número de trabajadores, el valor de los activos o las ventas brutas anuales; posteriormente, el decreto 957 de 2019, emitido por el Ministerio de comercio, industria y turismo, reglamenta este aspecto según el sector económico en el que la empresa lleve a cabo su actividad, ver tabla 2:
+    .titulo-sexto.color-acento-contenido
+      h5 Tabla 2.
+      span Clasificación de las empresas según Decreto 957 
 
-
+    .tabla-b.color-acento-contenido.mb-5.mt-5
+      .tabla-b__header.justify-content-center
+        h5.mb-0.Text-grande Ingresos en UVT (unidades de valor tributario) de actividades ordinarias según sector económico
+      table.justify-content-center
+        caption Nota. Decreto 957 del Ministerio de Comercio, Industria y Turismo (2019).
+        thead.bg-tabla-primario.Text-grande
+          tr
+            th.text-white Tamaño de la empresa / sector
+            th.text-white Manufactura
+            th.text-white Servicios
+            th.text-white Comercio
+        tr.Text-grande
+          th Microempresa
+          td Menores o iguales a 23.563.
+          td Menores o iguales a 32.988.
+          td Menores o iguales a 44.769.
+        tr.Text-grande
+          th Pequeña
+          td Mayores a 23.563 y menores o iguales a 204.995.
+          td Mayores a 32.988 y menores o iguales a 131.951.
+          td Mayores a 44.769 y menores o iguales a 431.196.
+        tr.Text-grande
+          th Mediana
+          td Mayores a 204.995 y menores o iguales a 1'736.565.
+          td Mayores a 131.951 y menores o iguales a 483.034.
+          td Mayores a 431.196 y menores o iguales a 2.160.692.
+        tr.Text-grande
+          th Grande
+          td Mayores a 1'736.565.
+          td Mayores a 483.034.
+          td Mayores a 2.160.692.
+    .titulo-segundo.color-acento-contenido
+      h2 1.2  Recursos
+    .row.mb-5.mt-5
+      .col-7
+        p.mb-4 <span style='color:#5F9025;'>Según Planas (2008)</span>, las empresas funcionan como sistemas abiertos, en donde obtienen recursos del ambiente como lo son las materias primas o el capital, y que suelen ser conocidas como entradas o “inputs” por su traducción al inglés. Esto puede aterrizarse a ejemplos como la compra de leche en una productora de alimentos, como materias primas que luego son transformadas para reintegrarse al entorno en forma de salidas o “outputs”. Continuando con el ejemplo, la leche se sometería a un proceso productivo para venderse en forma de queso o mantequilla.
+        .cajon.Color-Bkg-Cajon.p-4.mb-4.Neg-Izq.position-relative
+          p.color-acento-contenido El ciclo debe ser supervisado de manera permanente de tal forma que se garantice el cumplimiento de las estrategias propuestas por los directivos. Al fin y al cabo, en el desarrollo operativo de la empresa, siempre se deberá velar por el cumplimiento de las expectativas de sus dueños, por lo que estos sistemas de control aportarán la retroalimentación necesaria para pulir el proceso productivo e incrementar las ganancias esperadas con el paso del tiempo, ver figura 1. 
+          img.hijoHoja(src='@/assets/curso/hoja.png')
+      .col-5
+        img(src='@/assets/curso/Reunion.svg')
+    
+    .row.mb-5.mt-5
+      .col-12
+        .titulo-segundo.color-acento-contenido
+          h5 Figura 1. Empresas como sistema
+        img(src='@/assets/curso/figura1.svg')   
 </template>
 
 <script>
