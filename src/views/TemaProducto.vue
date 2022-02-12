@@ -3,10 +3,10 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    #t_2_2_1.pb-5.h2 tema 2.2.1
+    #etapas.pb-5.h2 tema etapas
     .pb-5(v-for="item of 15")
 
-    #t_2_2_2.pb-5.h2 tema 2.2.2
+    #producto.pb-5.h2 tema producto
     .pb-5(v-for="item of 15")
 
 </template>

@@ -3,26 +3,58 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal
-      .h3 Producción Audiovisual
+    .titulo-principal.color-acento-contenido
+      .titulo-principal__numero              
+        span.text-white 1        
+      h1 Producción
+
+    .row.mb-5.mt-5
+      .col-7
+        p.mb-4 La producción puede definirse como el proceso mediante el cual una empresa transforma una serie de insumos en un producto terminado. Como se ha mencionado previamente, el objetivo de una organización es la generación de valor a través de la satisfacción de necesidades identificadas en el mercado objetivo, esto implica la oferta de bienes o servicios que otros agentes no están aportando a la sociedad, o no lo hacen de forma suficiente.
+        .cajon.Color-Bkg-Cajon.p-4.mb-4.Neg-Izq.position-relative
+          p.color-acento-contenido La mecánica organizacional puede reducirse a un flujo compuesto por tres grandes momentos: en primer lugar, la obtención de recursos materiales o técnicos del ambiente, para ello puede valerse de operaciones mercantiles como la compra de materias primas, obtención de créditos financieros, reclutamiento de personal entre otros, posteriormente la etapa de producción que involucra tomar estos recursos y dotarlos de un propósito, bien sea transformándolos en un producto tangible o diseñando un servicio concreto, y finalmente, la entrega de estos al mercado en forma de venta a los clientes. 
+          img.hijoHoja1(src='@/assets/curso/hoja.png')
+      .col-5
+        img(src='@/assets/curso/Estudio.png')
+
+    #etapas.titulo-segundo.color-acento-contenido
+      h2  2.1 Etapas
     
-    #t_2_1.titulo-segundo
-      .h4 2.1 Infografía Animada
-    
-    p.mb-4 Propuesta infográfica en animación que refuerce un tema y matice conceptos dados de manera creativa y con intención pedagógica.
+    p.mb-4 El proceso productivo pasa por varias fases con funciones específicas hasta dar con la venta y entrega del producto final, el desglose de la producción puede presentarse así:
+    .row.mb-5.mt-5
+      .col-5
+        img(src='@/assets/curso/Exposicion.png')
+      .col-7.mb-5.mb-md-0
+        LineaTiempoD.color-acento-contenido
+          p(numero="1" titulo="Etapa analítica o de acopio") En esta fase se da inicio al ciclo productivo, y como su nombre lo indica, se caracteriza porque la organización busca conseguir la materia prima necesaria para cumplir con las metas de producción incurriendo en la menor cantidad de costos. La búsqueda de proveedores se centra en conseguir la mejor tarifa sin sacrificar calidad o cumplimiento. 
+          
+          p(numero="2" titulo="Etapa de síntesis o producción") Inicia el proceso de transformación de las materias primas en un nuevo producto, se involucran elementos del costo como la mano de obra y otros costos indirectos de fabricación. De manera paralela se establecen los procedimientos de supervisión y control, que buscan garantizar la calidad de los bienes producidos o servicios prestados, y aportar información utilidad para proponer las acciones de mejora a futuro.
+          
+          p(numero="3" titulo="Etapa de acondicionamiento o procesamiento") Finalmente, el producto recibe las modificaciones y adecuaciones necesarias para satisfacer la demanda de los clientes. Esto incluye costos de embalaje o presentación, almacenamiento, transporte y cualquier otro gasto asociado con  la entrega de los bienes o servicios.
 
-    figure.mb-5
-      .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/2cnKTwQ85fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    #producto.titulo-segundo
+      .h4 2.2 Producto
 
-    #t_2_2.titulo-segundo
-      .h4 2.2 Video Motion
+    #planmerca.titulo-segundo
+      .h4 2.3 Plan de Mercadeo
 
-    #t_2_2_1.titulo-segundo
-      .h4 2.2.1 Clasificación
+    #costo.titulo-segundo
+      .h4 2.4 Costo
 
-    #t_2_2_2.titulo-segundo
-      .h4 2.2.2 Fichas Técnicas
+    #clase.titulo-segundo
+      .h4 2.5 Clasificación
+
+    #calculo.titulo-segundo
+      .h4 2.6 Cálculo
+
+    #ordenes.titulo-segundo
+      .h4 2.7 Órdenes de Producción
+
+    #caracteristicas.titulo-segundo
+      .h4 2.7.1 Características
+
+    #diligencia.titulo-segundo
+      .h4 2.7.2 Diligenciamiento
 
     p.mb-4 Animación digital que crea la ilusión de movimiento mediante imágenes, fotografías, títulos, colores y diseños.
 
