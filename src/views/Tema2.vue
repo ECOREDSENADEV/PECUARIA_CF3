@@ -1235,11 +1235,281 @@
     #ordenes.titulo-segundo   
       .h4 2.7 Órdenes de Producción
 
+      .row.mt-4
+        .col-4
+        .col-8
+          p Las órdenes de producción, también conocidas como órdenes de pedido, suelen ser utilizadas en empresas en las que la línea de producción no opera de manera permanente. <span style="color: #5F9025;">Bajo este sistema, la determinación del coste de un lote de producto terminado se estima de forma independiente a otros, por lo que pueden existir variaciones en el costo de venta unitario entre una y otra orden.</span>
+      .row.ms-1.fondoBanner-2
+        .col-5
+            img.Neg-Top140(src='@/assets/curso/mujerPC.png', alt='Ordenes de producción')
+        .col-7
+          .cajon.Color-Bkg-Cajon.p-4.mb-4.Neg-Der
+            .row  
+              .col-1
+                img(src='@/assets/curso/figRio.svg')
+              .col-11
+                p <span style="font-weight: bold;">Este sistema ofrece una gran utilidad en unidades productivas que trabajan por encargo, puesto que las mediciones varían en función de la situación actual.</span>  El siguiente formato propone un esquema para utilizar bajo esta metodología; su diligenciamiento suele ser precedido por una solicitud comercial, es decir, el área de ventas indica la unidad de productos vendidos, y de cara a esto, el departamento de producción determina el costo unitario de cara a las exigencias presentadas, ver tabla 11.
+      .titulo-sexto.color-acento-contenido.ms-4.mt-4
+         span <span style='font-weight: bold;'>Tabla 11</span> Ejemplo de orden de producción
+      .row
+        .col-1
+        .col-10.justify-content-center
+          table.table-small.table-responsive.mt-5
+            thead
+              tr.text-center
+                <th colspan="8"> Orden de producción</th>
+              tr
+                <th colspan="7"> Unidades</th>
+                <th> Nro. Orden</th>
+              tr
+                <th colspan="8"> Estado</th>
+              tr
+                <th colspan="8"> Producto:</th>
+              tr.text-center
+                <th colspan="3"> Materiales</th>
+                <th colspan="3"> Mano de obra directa</th>
+                <th colspan="2"> Costos indirectos</th>
+              tr.text-center
+                th
+                th Cantidad
+                th Costos
+                th
+                th Cantidad
+                th Costos
+                th
+                th Costos            
+              tr.text-center
+                th cantidad
+                th Vr. Unit
+                th Total
+                th cantidad
+                th Vr. Unit
+                th Total
+                th cantidad
+                th Vr. Unit        
+            caption Nota. Guarnizo Cuellar y Cárdenas (2015). 
+            tr
+              td
+              td
+              td
+              td
+              td
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+              td
+              td
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+              td
+              td
+              td
+              td
+              td
+            tr
+              td Total
+              td
+              td
+              td Total
+              td
+              td
+              td Total
+              td
+            tr
+              td
+              td
+              td
+              td
+              td
+              td
+              td
+              td
+            tr
+              <td colspan="2">Total costo orden</td>
+              td Costo unitario
+              td
+              td
+              td
+              td
+              td
+        .col-1
     #caracteristicas.titulo-segundo
-      .h4 2.7.1 Características
+      .row.mt-4.fondoBanner-3
+        .col-4
+          .h4.mb-5.ms-4.mt-4 2.7.1 Características
+          img(src='@/assets/curso/mujerHombre.png', alt='Características')
+        .col-8
+          p.mb-5.me-4.mt-4.Text-mediano <span style='font-weight: bold;'>Las ordenes de producción preceden el inicio del ciclo productivo, por lo que su emisión resulta un requisito previo.</span> En ellas se consigna información relevante como las unidades a producir, su identificación y el número consecutivo de la orden con el fin de establecer prioridades. Las siguientes son algunas de las características más importantes de estas:
+          .row.mb-5
+            .col-sm.mb-5.mb-sm-0
+              ol.lista-ol--cuadro.Text-mediano.color-primario
+                li.me-5.ms-4.text-mediano 
+                  .lista-ol--cuadro__vineta
+                    span a
+                  | Se espera estimar un costo de producción distinto para cada pedido, por lo que es común ver la aplicación de este tipo de metodologías en unidades productivas que no mantienen una línea de producción estandarizada o permanente. 
+                li.me-5.ms-4
+                  .lista-ol--cuadro__vineta
+                    span b
+                  | Se hace necesaria una planificación previo inicio de la producción, puesto que el alistamiento del material y el diligenciamiento de la orden de producción varía de acuerdo con las unidades que se esperan producir
+      .row.fondoBanner-3
+        .col-12.ms-4.mt-4
+          .col-sm.mb-5.mb-sm-0
+            ol.lista-ol--cuadro
+              li.Text-mediano.ms-4
+                .lista-ol--cuadro__vineta
+                  span c
+                | La producción requiere de un pedido previo, lo que implica, que si no se efectúan ventas, los niveles de producción se reducirán al mínimo. El trabajo por encargo suele optimizar en costos de bodegaje o almacenamiento, pero los costos se pueden ver castigados por la capacidad ociosa de la planta.
 
-    #diligencia.titulo-segundo
-      .h4 2.7.2 Diligenciamiento
+    
+      #diligencia.titulo-segundo
+        .h4.mt-5 2.7.2 Diligenciamiento
+      .row.mb-5.mt-5
+        .col-7            
+          p.mb-4mt-4.Text-mediano Al diligenciar la orden de producción, se espera que los insumos estimados sean los suficientes para dar cumplimiento con la demanda del cliente. Gracias a esto, se minimizan los costos de almacenaje, caducidad u obsolescencia. Una vez definidos los insumos, se les asigna un valor para calcular el costo total de la orden de producción, y de forma derivada, obtener el costo unitario.
+          .row
+            .col-1
+              img(src='@/assets/curso/figRio.svg')
+            .col-11
+              p.mb-4.Text-mediano <span style="color: #5F9025;">Para ilustrar el diligenciamiento de una orden de producción, se presenta la siguiente situación: se solicita por medio de la orden de producción 53, 4.000 litros de leche en una granja pecuaria para cumplir con los pedidos semanales producto de las ventas efectuadas por el área comercial. Para efectos prácticos, se cuenta con un solo operario y las ordenes son de periodicidad semanal. La siguiente es la discriminación de los costos:</span>             
+        .col-5
+          img(src='@/assets/curso/manosRevisor.png') 
+      .row.mb-5.mt-5
+        .col-2
+        .col-1
+          img(src='@/assets/curso/circulo.svg')
+        .col-8
+          h3.mb-4
+            span.colorText-verde Materia prima
+            p.mt-4.mb-4 Se estima que las vacas consumen 3 Kilogramos de concentrado diario y producen 10 litros de leche en ese mismo periodo de tiempo. la compra se efectúa de forma mensual a un proveedor que la ofrece a un valor de $1.500 por Kilogramo, incluida la entrega en la granja. Si cada vaca puede producir 70 litros semanales, se requerirá de la producción de 58 animales para cubrir este pedido, y por lo tanto, de 1.218 kg de concentrado. Además del pastoreo y el concentrado, las vacas requieren de una suplementación en sales minerales con alto contenido nutricional. Así, la unidad productiva suministra 1 kilogramo de sales minerales semanales a cada vaca productora. El proveedor ofrece este producto a un valor de $ 2.000 por cada kilogramo.
+        .col-1
+      .row.mb-5.mt-5
+        .col-2
+        .col-1
+          img(src='@/assets/curso/circulo.svg')
+        .col-8
+          h3.mb-4
+            span.colorText-verde Mano de obra
+            p.mt-4.mb-4 La granja cuenta con un solo operario cuyo salario básico es de $ 1.000.000, adicionalmente cuenta con las prestaciones de ley equivalentes a un 30 % del ingreso básico, también se debe cancelar la seguridad social a las entidades correspondientes por un valor equivalente al 20% del salario. Dado que la orden de producción se lleva a cabo en una semana, el costo del empleado debe tomarse de manera proporcional (una cuarta parte del salario)
+        .col-1
+      .row.mb-5.mt-5
+        .col-2
+        .col-1
+          img(src='@/assets/curso/circulo.svg')
+        .col-8
+          h3.mb-4
+            span.colorText-verde Costos indirectos
+            p.mt-4.mb-4 Los costos indirectos mensuales de la granja son los siguientes: por concepto de aseo y desinfección de la granja: $ 1.500.000, el pago de servicios públicos (agua y luz) es en promedio de 400.000 y por último, el costo de la medicación y tratamiento veterinario asciende a $ 800.000. Al igual que con la mano de obra, se debe practicar la proporción para una sola semana de producción, ver tabla 12.
+        .col-1
+
+    .titulo-sexto.color-acento-contenido.ms-4.mt-4
+      span <span style='font-weight: bold;'>Tabla 11</span> Ejemplo de orden de producción
+    .row
+      .col-1
+      .col-10.justify-content-center
+        table.table-small.table-responsive.mt-5.Text-mediano
+          thead.text-bold
+            tr.text-center
+              <th colspan="8"> Orden de producción</th>
+            tr
+              th Unidades
+              <th colspan="5"> 4.000</th>
+              th Nro. Orden
+              th.text-center 53
+            tr
+              th Estado
+              <th colspan="7"> En proceso</th>
+            tr
+              th Producto
+              <th colspan="7"> Litro de leche</th>
+            tr.text-center
+              <th colspan="3"> Materiales</th>
+              <th colspan="3"> Mano de obra directa</th>
+              <th colspan="2"> Costos indirectos</th>
+            tr.text-center
+              th
+              th Cantidad
+              th Costos
+              th
+              th Cantidad
+              th Costos
+              th
+              th Costos                  
+          caption Nota. Sena (2021).
+          tr
+            td Concentrado
+            td.text-center 12
+            td 18
+            td Salario
+            td.text-center 1
+            td 250.000
+            td Aseo 
+            td 375.000
+          tr
+            td Sales
+            td.text-center 58
+            td 116.000
+            td Prestaciones
+            td.text-center 1
+            td 75.000
+            td Servicios Públicos
+            td 100.000
+          tr
+            td 
+            td
+            td
+            td Seguridad social
+            td.text-center 1
+            td 50.000
+            td Veterinario
+            td 200.000
+          tr
+            td Total
+            td 
+            td  1.943.000
+            td Total
+            td
+            td 375.000
+            td Total
+            td 675.000
+          tr
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+          tr
+            <td colspan="2">Total costo orden</td>
+            td 2.993.000
+            td Costo unitario
+            td
+            td 748
+            td
+            td
+          .col-1
+
+      .row.mb-5.mt-5.ms-5
+        .col-5
+          img(src='@/assets/curso/supervisorPC.png')      
+        .col-7
+          .cajon.Color-Bkg-Cajon.p-4.mb-4.mt-4.Neg-Der.position-relative
+            .titulo-sexto.color-acento-contenido
+              span Del formato anterior se desprende que lo que se busca con la orden de producción es determinar las cantidades y el costo de los insumos necesarios para producir lo solicitado. Con esta información, se puede estimar un costo unitario y a partir de ello, establecer un margen de rentabilidad por cada litro de leche vendida.
+
+
+      p.mb-4.ms-5 El costo unitario es el resultado del costo total de la orden de producción dividido en el número de unidades producidas, con los datos aquí presentados es posible determinar el valor de la utilidad bruta de la granja, puesto que si se supone un precio de venta de $ 1.000 por litro de leche, de forma rápida puede identificarse el beneficio unitario (1.000 – 748= $ 252) o global (4.000.000 – 2.993.000 = $ 1.007.000).
+
 
 </template>
 
